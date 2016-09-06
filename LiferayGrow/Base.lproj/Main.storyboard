@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sOQ-23-aBE">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="5bl-W8-VBp">
+            <objects>
+                <viewController id="sOQ-23-aBE" customClass="HomeViewController" customModule="LiferayGrow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9I2-oa-PaH"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lkg-93-qxf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AoA-Xi-xNa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="R59-yb-gfF"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="Login" id="w2H-JL-uNy"/>
+                        <segue destination="DQ8-Su-9mE" kind="presentation" identifier="AutoLogin" id="0eK-Ea-WTR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="stK-yd-P6c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="616.5" y="428.5"/>
+        </scene>
+        <!--Login Screen View-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Login Screen View" id="BYZ-38-t0r" customClass="ViewController" customModule="LiferayGrow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LWo-6c-3qx" customClass="LoginScreenlet" customModule="LiferayScreens">
+                                <rect key="frame" x="0.0" y="-1" width="320" height="570"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="MnC-kZ-Qez" userLabel="width = 320"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="570" id="cu5-Oa-k6M" userLabel="height = 570"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="saveCredentials" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="companyId">
+                                        <integer key="value" value="20116"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LWo-6c-3qx" secondAttribute="bottom" constant="77" id="999-Fb-dWy"/>
+                            <constraint firstItem="LWo-6c-3qx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="W1S-v5-aqd"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="LWo-6c-3qx" secondAttribute="bottom" id="lMr-WS-95Z"/>
+                            <constraint firstItem="LWo-6c-3qx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ozD-Xl-W6f"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="loginScreenlet" destination="LWo-6c-3qx" id="jWL-Ku-TUD"/>
+                        <segue destination="DQ8-Su-9mE" kind="show" identifier="MainScreen" id="xd5-41-OGh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1116" y="428"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="ASF-NM-EDl">
+            <objects>
+                <viewController title="Main" id="tfc-oN-TUA" customClass="MainScreenViewController" customModule="LiferayGrow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="X9Y-qr-eGV"/>
+                        <viewControllerLayoutGuide type="bottom" id="ecz-RD-86u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NCh-WD-EuN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgr-IG-Rv9">
+                                <rect key="frame" x="29" y="85" width="260" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.8784313725490196" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="People">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mOb-K1-SPz" kind="show" id="X8g-io-dwq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2nh-Uw-tii">
+                                <rect key="frame" x="29" y="263" width="260" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.80000000000000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Excelence">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3id-q2-nZW" kind="show" identifier="" id="xMn-vD-zuS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGP-7w-REK">
+                                <rect key="frame" x="29" y="173" width="260" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.83921568627450982" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Learn">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="AhS-PW-cdk" kind="show" id="AXh-fZ-ukK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcK-9b-RqA">
+                                <rect key="frame" x="29" y="351" width="260" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.76078431372549016" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Share">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="PTY-5c-5Ui" kind="show" id="8AD-ZB-URh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOb-Zq-yza">
+                                <rect key="frame" x="30" y="488" width="260" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Ee4-W1-ove"/>
+                                    <constraint firstAttribute="width" constant="260" id="pgS-4z-vGm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logout:" destination="tfc-oN-TUA" eventType="touchUpInside" id="CdF-KS-KhG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93815719550814436" green="1" blue="0.97912506876898309" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="fgr-IG-Rv9" firstAttribute="centerX" secondItem="NCh-WD-EuN" secondAttribute="centerX" id="0Zh-qd-uuz"/>
+                            <constraint firstItem="qGP-7w-REK" firstAttribute="centerX" secondItem="NCh-WD-EuN" secondAttribute="centerX" id="D5A-bD-FhH"/>
+                            <constraint firstItem="2nh-Uw-tii" firstAttribute="top" secondItem="qGP-7w-REK" secondAttribute="bottom" constant="30" id="Iv2-NC-nao"/>
+                            <constraint firstItem="bcK-9b-RqA" firstAttribute="centerX" secondItem="NCh-WD-EuN" secondAttribute="centerX" id="Krx-9k-FN2"/>
+                            <constraint firstItem="bcK-9b-RqA" firstAttribute="top" secondItem="2nh-Uw-tii" secondAttribute="bottom" constant="28" id="QYm-h2-B4U"/>
+                            <constraint firstItem="2nh-Uw-tii" firstAttribute="centerX" secondItem="NCh-WD-EuN" secondAttribute="centerX" id="Ynm-HQ-l1Q"/>
+                            <constraint firstItem="qGP-7w-REK" firstAttribute="top" secondItem="fgr-IG-Rv9" secondAttribute="bottom" constant="28" id="ZkX-qN-SaS"/>
+                            <constraint firstItem="dOb-Zq-yza" firstAttribute="centerX" secondItem="NCh-WD-EuN" secondAttribute="centerX" id="noa-nb-c2b"/>
+                            <constraint firstItem="ecz-RD-86u" firstAttribute="top" secondItem="dOb-Zq-yza" secondAttribute="bottom" constant="20" id="ygo-tc-y09"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Main" id="l19-hI-peF"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="sOQ-23-aBE" kind="show" identifier="ShowHomeScreen" id="XXW-jU-AP2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0IG-23-dQB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="665.5" y="1386.5"/>
+        </scene>
+        <!--Asset View Controller-->
+        <scene sceneID="d6p-Be-1zC">
+            <objects>
+                <viewController id="xc3-17-Y8q" customClass="AssetViewController" customModule="LiferayGrow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="t0D-mT-Rwn"/>
+                        <viewControllerLayoutGuide type="bottom" id="s1G-EU-6mY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ICD-cN-sYE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FN9-IY-mIE">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="570"/>
+                                <subviews>
+                                    <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XdE-kc-en0">
+                                        <rect key="frame" x="-1" y="-4" width="321" height="568"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="XWw-vD-lLG" userLabel="width = 320"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="570" id="dGe-aV-0JQ"/>
+                                        </constraints>
+                                        <attributedString key="attributedText"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="XdE-kc-en0" secondAttribute="trailing" id="ARp-uZ-9lG"/>
+                                    <constraint firstItem="XdE-kc-en0" firstAttribute="leading" secondItem="FN9-IY-mIE" secondAttribute="leading" id="SZV-XE-GJu"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="groupId">
+                                        <integer key="value" value="20147"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FN9-IY-mIE" firstAttribute="top" secondItem="ICD-cN-sYE" secondAttribute="topMargin" id="3ZY-2L-ewD"/>
+                            <constraint firstItem="FN9-IY-mIE" firstAttribute="leading" secondItem="ICD-cN-sYE" secondAttribute="leadingMargin" id="LN4-2z-yx0"/>
+                            <constraint firstItem="s1G-EU-6mY" firstAttribute="top" secondItem="FN9-IY-mIE" secondAttribute="bottom" id="Xzw-bd-EVO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FN9-IY-mIE" secondAttribute="trailing" id="beM-ME-9FZ"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="wikiContent" destination="XdE-kc-en0" id="3MG-6Q-3On"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Azw-dG-Tvm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="78" y="2340"/>
+        </scene>
+        <!--People-->
+        <scene sceneID="oKs-BA-jUy">
+            <objects>
+                <viewController title="People" id="mOb-K1-SPz" customClass="PeopleViewController" customModule="LiferayGrow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xaZ-VZ-x5J"/>
+                        <viewControllerLayoutGuide type="bottom" id="6e9-Y7-9Tl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFit" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="667" id="HKZ-vO-41R">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view opaque="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="h2k-oR-t2F" customClass="AssetListScreenlet" customModule="LiferayScreens">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="570"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="1eT-aE-kAo"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="570" id="Z2C-mr-d1Y" userLabel="height ≥ 570"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autoLoad" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="refreshControl" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="groupId">
+                                        <integer key="value" value="20147"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="classNameId">
+                                        <integer key="value" value="28602"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="firstPageSize">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="pageSize">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="h2k-oR-t2F" secondAttribute="bottom" id="9n8-nO-Hjb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="h2k-oR-t2F" secondAttribute="trailing" id="AYc-fe-f8t"/>
+                            <constraint firstItem="h2k-oR-t2F" firstAttribute="centerX" secondItem="HKZ-vO-41R" secondAttribute="centerX" id="BeG-Ni-uZ9"/>
+                            <constraint firstItem="h2k-oR-t2F" firstAttribute="top" secondItem="HKZ-vO-41R" secondAttribute="topMargin" id="XdY-B3-0mc"/>
+                            <constraint firstItem="h2k-oR-t2F" firstAttribute="leading" secondItem="HKZ-vO-41R" secondAttribute="leadingMargin" id="qiR-Pg-LgL"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="screenlet" destination="h2k-oR-t2F" id="cSC-Yk-pQb"/>
+                        <segue destination="xc3-17-Y8q" kind="show" identifier="ShowPeopleWikiPage" id="szG-Yk-FaM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YWv-zB-qqC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2105" y="428"/>
+        </scene>
+        <!--Excellence-->
+        <scene sceneID="fvd-RH-raA">
+            <objects>
+                <viewController title="Excellence" id="3id-q2-nZW" customClass="ExcellenceViewController" customModule="LiferayGrow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UnV-fz-DQn"/>
+                        <viewControllerLayoutGuide type="bottom" id="ARa-p3-prv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LM1-WX-zUB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6aB-yT-s6X" customClass="AssetListScreenlet" customModule="LiferayScreens">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="570"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="lUA-DD-yhi"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="570" id="yWn-kg-5ga" userLabel="height ≥ 570"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="groupId">
+                                        <integer key="value" value="20147"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="classNameId">
+                                        <integer key="value" value="28602"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autoLoad" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="refreshControl" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="firstPageSize">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="pageSize">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6aB-yT-s6X" firstAttribute="centerX" secondItem="LM1-WX-zUB" secondAttribute="centerX" id="39A-j4-xuv"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="6aB-yT-s6X" secondAttribute="bottom" id="6kD-SX-VjB"/>
+                            <constraint firstItem="6aB-yT-s6X" firstAttribute="top" secondItem="LM1-WX-zUB" secondAttribute="topMargin" id="DGR-Gp-Z41"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6aB-yT-s6X" secondAttribute="trailing" id="ZVu-YW-6LL"/>
+                            <constraint firstItem="6aB-yT-s6X" firstAttribute="top" secondItem="LM1-WX-zUB" secondAttribute="topMargin" id="eQB-Pj-ksA"/>
+                            <constraint firstItem="6aB-yT-s6X" firstAttribute="leading" secondItem="LM1-WX-zUB" secondAttribute="leadingMargin" id="lD4-0S-6re"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="screenlet" destination="6aB-yT-s6X" id="StF-gi-Baf"/>
+                        <segue destination="xc3-17-Y8q" kind="show" identifier="ShowExcellenceWikiPage" id="0ol-fb-PX4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="adG-U8-FND" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2105" y="2199"/>
+        </scene>
+        <!--Share-->
+        <scene sceneID="N0t-Js-ylh">
+            <objects>
+                <viewController title="Share" id="PTY-5c-5Ui" customClass="ShareViewController" customModule="LiferayGrow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6sS-Fw-ZJ0"/>
+                        <viewControllerLayoutGuide type="bottom" id="hxa-ed-uOJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jQW-Bv-UnY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qui-ko-UPV" userLabel="Screenlet" customClass="AssetListScreenlet" customModule="LiferayScreens">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="570" id="DAg-mb-9hB" userLabel="height = 570"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="ZsA-dM-dxj" userLabel="width = 320"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="groupId">
+                                        <integer key="value" value="20147"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="classNameId">
+                                        <integer key="value" value="28602"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autoLoad" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="refreshControl" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="firstPageSize">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="pageSize">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Qui-ko-UPV" firstAttribute="top" secondItem="jQW-Bv-UnY" secondAttribute="topMargin" id="6bt-AC-RK9"/>
+                            <constraint firstItem="Qui-ko-UPV" firstAttribute="top" secondItem="jQW-Bv-UnY" secondAttribute="topMargin" id="HGx-C2-PTG"/>
+                            <constraint firstItem="Qui-ko-UPV" firstAttribute="leading" secondItem="jQW-Bv-UnY" secondAttribute="leadingMargin" id="IJ7-1s-QWp"/>
+                            <constraint firstItem="hxa-ed-uOJ" firstAttribute="top" secondItem="Qui-ko-UPV" secondAttribute="bottom" id="OKw-Dp-FEn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qui-ko-UPV" secondAttribute="trailing" id="OTH-FB-AMw"/>
+                            <constraint firstItem="Qui-ko-UPV" firstAttribute="centerX" secondItem="jQW-Bv-UnY" secondAttribute="centerX" id="m4Q-YC-Ifs"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="screenlet" destination="Qui-ko-UPV" id="gBl-pf-CV7"/>
+                        <segue destination="xc3-17-Y8q" kind="show" identifier="ShowShareWikiPage" id="dBC-5y-BdR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nAa-lA-tq5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2105" y="3033"/>
+        </scene>
+        <!--Learn-->
+        <scene sceneID="ZOw-T7-GYY">
+            <objects>
+                <viewController title="Learn" id="AhS-PW-cdk" customClass="LearnViewController" customModule="LiferayGrow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1mu-8y-xOd"/>
+                        <viewControllerLayoutGuide type="bottom" id="iel-5l-qkX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aYR-2z-09D">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HFR-jC-Xoh" customClass="AssetListScreenlet" customModule="LiferayScreens">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="570"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="49i-xW-scx"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="570" id="tmQ-co-rOB"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="groupId">
+                                        <integer key="value" value="20147"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="classNameId">
+                                        <integer key="value" value="28602"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autoLoad" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="refreshControl" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="firstPageSize">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="pageSize">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HFR-jC-Xoh" firstAttribute="top" secondItem="aYR-2z-09D" secondAttribute="topMargin" id="7A2-WI-imT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HFR-jC-Xoh" secondAttribute="trailing" id="HmH-WC-aKj"/>
+                            <constraint firstItem="HFR-jC-Xoh" firstAttribute="top" secondItem="aYR-2z-09D" secondAttribute="topMargin" id="KOs-RT-d6y"/>
+                            <constraint firstItem="HFR-jC-Xoh" firstAttribute="leading" secondItem="aYR-2z-09D" secondAttribute="leadingMargin" id="cs7-V4-CYl"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="HFR-jC-Xoh" secondAttribute="bottom" id="dEl-7R-qnh"/>
+                            <constraint firstItem="HFR-jC-Xoh" firstAttribute="centerX" secondItem="aYR-2z-09D" secondAttribute="centerX" id="dVJ-kk-xYC"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="screenlet" destination="HFR-jC-Xoh" id="NRZ-vj-D52"/>
+                        <segue destination="xc3-17-Y8q" kind="show" identifier="ShowLearnWikiPage" id="tMW-7Q-Sgk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8nB-Ox-XQ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2105" y="1386"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8bf-rd-V8W">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DQ8-Su-9mE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="F9H-F8-DkZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tfc-oN-TUA" kind="relationship" relationship="rootViewController" id="6Ja-9o-yfR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UKQ-Fx-9UV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="78.5" y="1386.5"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="0eK-Ea-WTR"/>
+        <segue reference="szG-Yk-FaM"/>
+    </inferredMetricsTieBreakers>
+</document>
