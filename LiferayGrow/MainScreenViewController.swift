@@ -41,12 +41,12 @@ class MainScreenViewController: UIViewController {
 		UIGraphicsEndImageContext()
 		
 		self.view.backgroundColor = UIColor(patternImage: image)
-
+/*
 		self.navigationController!.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
 		self.navigationController!.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
 		self.navigationController!.navigationBar.shadowImage = UIImage()
-		//self.navigationController!.navigationBar.translucent = true
-		self.navigationController!.view.backgroundColor = UIColor.clearColor()
+		self.navigationController!.navigationBar.translucent = true
+		self.navigationController!.view.backgroundColor = UIColor.clearColor()*/
 	}
 
 	@IBAction func logout(sender: AnyObject) {

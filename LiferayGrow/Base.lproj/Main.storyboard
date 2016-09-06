@@ -109,7 +109,7 @@
                                     <constraint firstAttribute="width" constant="128" id="tYH-HT-jun"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LWo-6c-3qx" customClass="LoginScreenlet" customModule="LiferayScreens">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LWo-6c-3qx" customClass="LoginScreenlet" customModule="LiferayScreens">
                                 <rect key="frame" x="0.0" y="228" width="320" height="300"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -232,7 +232,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="fgr-IG-Rv9" firstAttribute="centerX" secondItem="NCh-WD-EuN" secondAttribute="centerX" id="0Zh-qd-uuz"/>
                             <constraint firstItem="qGP-7w-REK" firstAttribute="top" secondItem="fgr-IG-Rv9" secondAttribute="bottom" constant="30" id="4cK-Am-qhZ"/>
@@ -330,7 +330,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view opaque="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="h2k-oR-t2F" customClass="AssetListScreenlet" customModule="LiferayScreens">
+                            <view opaque="NO" contentMode="center" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h2k-oR-t2F" customClass="AssetListScreenlet" customModule="LiferayScreens">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="570"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -386,7 +386,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6aB-yT-s6X" customClass="AssetListScreenlet" customModule="LiferayScreens">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6aB-yT-s6X" customClass="AssetListScreenlet" customModule="LiferayScreens">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="570"/>
                                 <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -443,7 +443,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qui-ko-UPV" userLabel="Screenlet" customClass="AssetListScreenlet" customModule="LiferayScreens">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qui-ko-UPV" userLabel="Screenlet" customClass="AssetListScreenlet" customModule="LiferayScreens">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -500,7 +500,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HFR-jC-Xoh" customClass="AssetListScreenlet" customModule="LiferayScreens">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HFR-jC-Xoh" customClass="AssetListScreenlet" customModule="LiferayScreens">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="570"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
