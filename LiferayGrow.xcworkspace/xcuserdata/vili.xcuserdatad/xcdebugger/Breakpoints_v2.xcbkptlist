@@ -120,11 +120,11 @@
                   moduleName = "LiferayGrow"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/vili/Development/LiferayGrow/LiferayGrow/AssetViewController.swift"
-                  timestampString = "494848290.98525"
+                  timestampString = "494858915.195673"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "57"
-                  endingLineNumber = "57"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
                   offsetFromSymbolStart = "27">
                </Location>
                <Location
@@ -135,11 +135,11 @@
                   moduleName = "LiferayGrow"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/vili/Development/LiferayGrow/LiferayGrow/AssetViewController.swift"
-                  timestampString = "494848290.985383"
+                  timestampString = "494858915.195867"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "57"
-                  endingLineNumber = "57"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
                   offsetFromSymbolStart = "42">
                </Location>
                <Location
@@ -150,11 +150,11 @@
                   moduleName = "LiferayGrow"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/vili/Development/LiferayGrow/LiferayGrow/AssetViewController.swift"
-                  timestampString = "494848290.985593"
+                  timestampString = "494858915.196166"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "57"
-                  endingLineNumber = "57"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
                   offsetFromSymbolStart = "31">
                </Location>
             </Locations>
@@ -172,6 +172,22 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"
             endingLineNumber = "49"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LiferayGrow/MainScreenViewController.swift"
+            timestampString = "494859010.794973"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>

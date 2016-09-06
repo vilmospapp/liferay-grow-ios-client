@@ -23,6 +23,9 @@
 		3C89475F1D75BEB0000A3026 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C89475D1D75BEB0000A3026 /* Main.storyboard */; };
 		3C8947611D75BEB0000A3026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C8947601D75BEB0000A3026 /* Assets.xcassets */; };
 		3C8947641D75BEB0000A3026 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C8947621D75BEB0000A3026 /* LaunchScreen.storyboard */; };
+		3C94B7571D7EE37500EE0041 /* GrowLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C94B7561D7EE37500EE0041 /* GrowLogo.png */; };
+		3C94B7591D7EEA0E00EE0041 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C94B7581D7EEA0E00EE0041 /* icon@2x.png */; };
+		3C94B75B1D7EF5ED00EE0041 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3C94B75A1D7EF5ED00EE0041 /* background.jpg */; };
 		3CA85E981D78679900EFF4CD /* AssetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA85E971D78679900EFF4CD /* AssetViewController.swift */; };
 		3CB6EEC71D76C07F00A54BC6 /* liferay-server-context.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CB6EEC61D76C07F00A54BC6 /* liferay-server-context.plist */; };
 		3CB6EEC91D76C53800A54BC6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB6EEC81D76C53800A54BC6 /* HomeViewController.swift */; };
@@ -48,6 +51,9 @@
 		3C8947601D75BEB0000A3026 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C8947631D75BEB0000A3026 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C8947651D75BEB0000A3026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C94B7561D7EE37500EE0041 /* GrowLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GrowLogo.png; path = LiferayGrow/GrowLogo.png; sourceTree = "<group>"; };
+		3C94B7581D7EEA0E00EE0041 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "LiferayGrow/icon@2x.png"; sourceTree = "<group>"; };
+		3C94B75A1D7EF5ED00EE0041 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = LiferayGrow/background.jpg; sourceTree = "<group>"; };
 		3CA85E971D78679900EFF4CD /* AssetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetViewController.swift; sourceTree = "<group>"; };
 		3CB6EEC61D76C07F00A54BC6 /* liferay-server-context.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "liferay-server-context.plist"; sourceTree = "<group>"; };
 		3CB6EEC81D76C53800A54BC6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +139,9 @@
 		3C89474D1D75BEB0000A3026 = {
 			isa = PBXGroup;
 			children = (
+				3C94B75A1D7EF5ED00EE0041 /* background.jpg */,
+				3C94B7581D7EEA0E00EE0041 /* icon@2x.png */,
+				3C94B7561D7EE37500EE0041 /* GrowLogo.png */,
 				3CB6EECD1D76FA0700A54BC6 /* Podfile */,
 				3CB6EEC61D76C07F00A54BC6 /* liferay-server-context.plist */,
 				3C8947581D75BEB0000A3026 /* LiferayGrow */,
@@ -251,6 +260,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C94B75B1D7EF5ED00EE0041 /* background.jpg in Resources */,
+				3C94B7571D7EE37500EE0041 /* GrowLogo.png in Resources */,
+				3C94B7591D7EEA0E00EE0041 /* icon@2x.png in Resources */,
 				3C46EA2A1D7D684C0031A0D7 /* WikiPageDisplayView_default.xib in Resources */,
 				3CB6EECE1D76FA0700A54BC6 /* Podfile in Resources */,
 				3CB6EEC71D76C07F00A54BC6 /* liferay-server-context.plist in Resources */,
@@ -449,7 +461,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liferay.grow.LiferayGrow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -463,7 +475,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liferay.grow.LiferayGrow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
