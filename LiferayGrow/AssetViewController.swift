@@ -30,23 +30,21 @@ class AssetViewController: UIViewController {
 			let page = try wikiPageService.getPageWithGroupId(asset!.groupId, nodeId: nodeId.asLong!, title: asset!.title)
 	
 
-			let wikiTitle = page["title"] as! String + "\r\n\r\n"
+			let wikiTitle = page["title"] as! String
 			
-			let attrs = [NSFontAttributeName : UIFont.boldSystemFontOfSize(22)]
-	
-			boldString = NSMutableAttributedString(string:wikiTitle, attributes:attrs)
+			let wikiContent = page["content"] as! String
+			let templateHTML = NSBundle.mainBundle().pathForResource("template", ofType: "html")
+			let content = try String(contentsOfFile: templateHTML!, encoding: NSUTF8StringEncoding)
+			let contentWithTitle = content.stringByReplacingOccurrencesOfString("#title#", withString: wikiTitle, options: NSStringCompareOptions.LiteralSearch, range: nil)
+			let contentWithCreole = contentWithTitle.stringByReplacingOccurrencesOfString("#content#", withString: wikiContent, options: NSStringCompareOptions.LiteralSearch, range: nil)
 
+			let contentWithNewLine = contentWithCreole.stringByReplacingOccurrencesOfString("\n", withString: "<br />", options: NSStringCompareOptions.LiteralSearch, range: nil)
 			
-			let content = page["content"] as! String
+			print("Content:\(contentWithNewLine)")
 			
-			attributedContent = NSMutableAttributedString(string:content)
-			wikiContent.attributedText = boldString
+			webView.loadHTMLString(contentWithNewLine, baseURL: NSURL(string: ""))
+			//webView.stringByEvaluatingJavaScriptFromString("loadWikiPage()")
 			
-			let finalContent: NSMutableAttributedString = wikiContent.attributedText.mutableCopy() as! NSMutableAttributedString
-				
-			finalContent.appendAttributedString(attributedContent)
-			
-			wikiContent.attributedText = finalContent.copy() as! NSAttributedString
 		} catch {
 			print("Error : \(error)")
 		}
@@ -55,10 +53,13 @@ class AssetViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 	
-	@IBOutlet weak var wikiContent: UITextView!
-
-	var boldString: NSMutableAttributedString!
-	var attributedContent: NSMutableAttributedString!
+	
+	@IBOutlet weak var webView: UIWebView!
+	
+	var peoplePlid = 34032;
+	var learnPlid = 34262;
+	var excellencePlid = 34766;
+	var sharePlid = 34778;
 	var asset: Asset!
 	var session: LRSession?	
 }

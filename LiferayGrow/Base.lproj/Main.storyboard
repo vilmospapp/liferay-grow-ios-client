@@ -109,7 +109,7 @@
                                     <constraint firstAttribute="width" constant="128" id="tYH-HT-jun"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LWo-6c-3qx" customClass="LoginScreenlet" customModule="LiferayScreens">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LWo-6c-3qx" customClass="LoginScreenlet" customModule="LiferayScreens">
                                 <rect key="frame" x="0.0" y="228" width="320" height="300"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -274,25 +274,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FN9-IY-mIE">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FN9-IY-mIE">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="570"/>
                                 <subviews>
-                                    <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XdE-kc-en0">
-                                        <rect key="frame" x="-1" y="-4" width="321" height="568"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AO5-GA-vG4">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="570"/>
+                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="XWw-vD-lLG" userLabel="width = 320"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="570" id="dGe-aV-0JQ"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="Kuz-FZ-euX"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="570" id="gY1-u9-jyD"/>
                                         </constraints>
-                                        <attributedString key="attributedText"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        <dataDetectorType key="dataDetectorTypes" link="YES"/>
-                                    </textView>
+                                    </webView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="XdE-kc-en0" secondAttribute="trailing" id="ARp-uZ-9lG"/>
-                                    <constraint firstItem="XdE-kc-en0" firstAttribute="leading" secondItem="FN9-IY-mIE" secondAttribute="leading" id="SZV-XE-GJu"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="AO5-GA-vG4" secondAttribute="trailing" id="AAs-2J-eMF"/>
+                                    <constraint firstItem="AO5-GA-vG4" firstAttribute="top" secondItem="FN9-IY-mIE" secondAttribute="topMargin" id="JU2-AT-FjA"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="AO5-GA-vG4" secondAttribute="bottom" id="RHl-te-wc2"/>
+                                    <constraint firstItem="AO5-GA-vG4" firstAttribute="leading" secondItem="FN9-IY-mIE" secondAttribute="leadingMargin" id="bYu-m4-G6F"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="groupId">
@@ -302,16 +301,10 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="FN9-IY-mIE" firstAttribute="top" secondItem="ICD-cN-sYE" secondAttribute="topMargin" id="3ZY-2L-ewD"/>
-                            <constraint firstItem="FN9-IY-mIE" firstAttribute="leading" secondItem="ICD-cN-sYE" secondAttribute="leadingMargin" id="LN4-2z-yx0"/>
-                            <constraint firstItem="s1G-EU-6mY" firstAttribute="top" secondItem="FN9-IY-mIE" secondAttribute="bottom" id="Xzw-bd-EVO"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="FN9-IY-mIE" secondAttribute="trailing" id="beM-ME-9FZ"/>
-                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="wikiContent" destination="XdE-kc-en0" id="3MG-6Q-3On"/>
+                        <outlet property="webView" destination="AO5-GA-vG4" id="V7K-mo-BQy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Azw-dG-Tvm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -330,7 +323,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view opaque="NO" contentMode="center" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h2k-oR-t2F" customClass="AssetListScreenlet" customModule="LiferayScreens">
+                            <view opaque="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="h2k-oR-t2F" customClass="AssetListScreenlet" customModule="LiferayScreens">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="570"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -386,7 +379,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6aB-yT-s6X" customClass="AssetListScreenlet" customModule="LiferayScreens">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6aB-yT-s6X" customClass="AssetListScreenlet" customModule="LiferayScreens">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="570"/>
                                 <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -443,7 +436,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qui-ko-UPV" userLabel="Screenlet" customClass="AssetListScreenlet" customModule="LiferayScreens">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qui-ko-UPV" userLabel="Screenlet" customClass="AssetListScreenlet" customModule="LiferayScreens">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -500,7 +493,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HFR-jC-Xoh" customClass="AssetListScreenlet" customModule="LiferayScreens">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HFR-jC-Xoh" customClass="AssetListScreenlet" customModule="LiferayScreens">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="570"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -568,7 +561,7 @@
         <image name="GrowLogo.png" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="szG-Yk-FaM"/>
         <segue reference="0eK-Ea-WTR"/>
+        <segue reference="tMW-7Q-Sgk"/>
     </inferredMetricsTieBreakers>
 </document>
