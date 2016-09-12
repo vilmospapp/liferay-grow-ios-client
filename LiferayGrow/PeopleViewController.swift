@@ -9,13 +9,13 @@
 import UIKit
 import LiferayScreens
 
-
 class PeopleViewController: UIViewController, AssetListScreenletDelegate {
 	
 	override func viewDidLoad() {
         super.viewDidLoad()
 
 		self.screenlet.delegate = self
+
 		let assetQuery: [String: AnyObject] = [
 			"allCategoryIds":[30835],
 			"groupId":20147,
@@ -23,8 +23,6 @@ class PeopleViewController: UIViewController, AssetListScreenletDelegate {
 		]
 		
 		self.screenlet.customEntryQuery = assetQuery
-
-       // Do any additional setup after loading the view.
     }
 
 	func screenlet(screenlet: AssetListScreenlet, onAssetSelected asset: Asset) {
@@ -42,6 +40,7 @@ class PeopleViewController: UIViewController, AssetListScreenletDelegate {
 	}
 
 	@IBOutlet weak var screenlet: AssetListScreenlet!
+
 	var selectedAsset: Asset!
 
 }

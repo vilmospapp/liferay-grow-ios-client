@@ -24,9 +24,8 @@ class ViewController: UIViewController, LoginScreenletDelegate {
 		self.performSegueWithIdentifier("MainScreen", sender:nil)
 	}
 	
-	func screenlet(screenlet: BaseScreenlet,
-	                        onLoginError error: NSError) {
-		
+	func screenlet(screenlet: BaseScreenlet, onLoginError error: NSError) {
+		print(error)
 	}
 	
 	func onScreenletCredentialsSaved(screenlet: BaseScreenlet) {
@@ -36,8 +35,6 @@ class ViewController: UIViewController, LoginScreenletDelegate {
 	func onScreenletCredentialsLoaded(screenlet: BaseScreenlet) {
 		
 	}
-
-
 
 }
 

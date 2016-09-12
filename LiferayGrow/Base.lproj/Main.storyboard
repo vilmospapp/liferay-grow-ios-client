@@ -18,18 +18,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eaK-cD-hMe">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eaK-cD-hMe">
+                                <rect key="frame" x="16" y="0.0" width="288" height="568"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="GrowLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="iSC-qz-eVf">
-                                        <rect key="frame" x="32" y="156" width="256" height="256"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GrowLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="iSC-qz-eVf">
+                                        <rect key="frame" x="16" y="156" width="256" height="256"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="256" id="0e2-kW-fdY"/>
                                             <constraint firstAttribute="width" constant="256" id="XAL-WM-2v2"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WfK-6q-1YA">
-                                        <rect key="frame" x="0.0" y="438" width="320" height="28"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WfK-6q-1YA">
+                                        <rect key="frame" x="-16" y="442" width="320" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="320" id="Ce8-d0-c7g"/>
                                             <constraint firstAttribute="height" constant="30" id="ujc-fT-Gch"/>
@@ -48,6 +48,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="WfK-6q-1YA" firstAttribute="centerX" secondItem="iSC-qz-eVf" secondAttribute="centerX" id="4ms-N8-AoP"/>
                                     <constraint firstItem="iSC-qz-eVf" firstAttribute="centerX" secondItem="eaK-cD-hMe" secondAttribute="centerX" id="LyX-St-bmw"/>
                                     <constraint firstItem="iSC-qz-eVf" firstAttribute="centerY" secondItem="eaK-cD-hMe" secondAttribute="centerY" id="WGt-nV-Qea"/>
                                     <constraint firstItem="WfK-6q-1YA" firstAttribute="top" secondItem="iSC-qz-eVf" secondAttribute="bottom" constant="30" id="mfL-JS-zng"/>
@@ -114,7 +115,6 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="MnC-kZ-Qez" userLabel="width = 320"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="cu5-Oa-k6M" userLabel="height =200"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="saveCredentials" value="YES"/>
@@ -126,8 +126,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LWo-6c-3qx" secondAttribute="bottom" constant="40" id="7x3-41-Iyf"/>
                             <constraint firstItem="rvE-pu-ZnV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MKT-TI-WrB"/>
                             <constraint firstItem="vqM-2I-PMg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ooq-rk-DFW"/>
+                            <constraint firstItem="LWo-6c-3qx" firstAttribute="leading" secondItem="rvE-pu-ZnV" secondAttribute="leading" id="Wd9-WE-yhj"/>
                             <constraint firstItem="rvE-pu-ZnV" firstAttribute="top" secondItem="vqM-2I-PMg" secondAttribute="bottom" constant="10" id="cCi-gg-qpZ"/>
                             <constraint firstItem="vqM-2I-PMg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="40" id="fXV-dR-oZq"/>
                             <constraint firstItem="LWo-6c-3qx" firstAttribute="top" secondItem="rvE-pu-ZnV" secondAttribute="bottom" constant="20" id="u60-uf-dYD" userLabel="Login Screenlet.top = Liferay GROW.bottom + 20"/>
@@ -156,8 +158,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgr-IG-Rv9">
-                                <rect key="frame" x="29" y="85" width="260" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgr-IG-Rv9">
+                                <rect key="frame" x="30" y="74" width="260" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="260" id="0kH-2f-bQX"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="azF-7K-nXK"/>
@@ -186,8 +188,8 @@
                                     <segue destination="3id-q2-nZW" kind="show" identifier="" id="xMn-vD-zuS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGP-7w-REK">
-                                <rect key="frame" x="29" y="173" width="260" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGP-7w-REK">
+                                <rect key="frame" x="30" y="164" width="260" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="4fA-Rz-Sba"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="260" id="KZN-io-kfD"/>
@@ -201,8 +203,8 @@
                                     <segue destination="AhS-PW-cdk" kind="show" id="AXh-fZ-ukK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcK-9b-RqA">
-                                <rect key="frame" x="29" y="351" width="260" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcK-9b-RqA">
+                                <rect key="frame" x="30" y="344" width="260" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="0Qd-Qn-2vG"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="260" id="9Qj-yF-ruX"/>
@@ -216,8 +218,8 @@
                                     <segue destination="PTY-5c-5Ui" kind="show" id="8AD-ZB-URh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOb-Zq-yza">
-                                <rect key="frame" x="29" y="442" width="260" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOb-Zq-yza">
+                                <rect key="frame" x="30" y="434" width="260" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="Ee4-W1-ove"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="260" id="pgS-4z-vGm"/>
@@ -274,16 +276,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FN9-IY-mIE">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FN9-IY-mIE">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="570"/>
                                 <subviews>
-                                    <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AO5-GA-vG4">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="570"/>
-                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="Kuz-FZ-euX"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="570" id="gY1-u9-jyD"/>
-                                        </constraints>
+                                    <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AO5-GA-vG4">
+                                        <rect key="frame" x="8" y="8" width="304" height="554"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
                                     </webView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -293,14 +292,15 @@
                                     <constraint firstAttribute="bottomMargin" secondItem="AO5-GA-vG4" secondAttribute="bottom" id="RHl-te-wc2"/>
                                     <constraint firstItem="AO5-GA-vG4" firstAttribute="leading" secondItem="FN9-IY-mIE" secondAttribute="leadingMargin" id="bYu-m4-G6F"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="groupId">
-                                        <integer key="value" value="20147"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FN9-IY-mIE" firstAttribute="leading" secondItem="ICD-cN-sYE" secondAttribute="leading" id="0aW-nJ-aEi"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="FN9-IY-mIE" secondAttribute="bottom" constant="-2" id="5I7-n7-dsa"/>
+                            <constraint firstItem="FN9-IY-mIE" firstAttribute="top" secondItem="ICD-cN-sYE" secondAttribute="top" id="8hi-va-QVu"/>
+                            <constraint firstAttribute="trailing" secondItem="FN9-IY-mIE" secondAttribute="trailing" id="B9p-Vh-iT5"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -326,10 +326,6 @@
                             <view opaque="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="h2k-oR-t2F" customClass="AssetListScreenlet" customModule="LiferayScreens">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="570"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="1eT-aE-kAo"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="570" id="Z2C-mr-d1Y" userLabel="height ≥ 570"/>
-                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="autoLoad" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="refreshControl" value="YES"/>
@@ -380,12 +376,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6aB-yT-s6X" customClass="AssetListScreenlet" customModule="LiferayScreens">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="570"/>
+                                <rect key="frame" x="16" y="0.0" width="288" height="568"/>
                                 <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="lUA-DD-yhi"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="570" id="yWn-kg-5ga" userLabel="height ≥ 570"/>
-                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="groupId">
                                         <integer key="value" value="20147"/>
@@ -439,10 +431,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qui-ko-UPV" userLabel="Screenlet" customClass="AssetListScreenlet" customModule="LiferayScreens">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="570" id="DAg-mb-9hB" userLabel="height = 570"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="ZsA-dM-dxj" userLabel="width = 320"/>
-                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="groupId">
                                         <integer key="value" value="20147"/>
@@ -463,7 +451,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Qui-ko-UPV" firstAttribute="top" secondItem="jQW-Bv-UnY" secondAttribute="topMargin" id="6bt-AC-RK9"/>
                             <constraint firstItem="Qui-ko-UPV" firstAttribute="top" secondItem="jQW-Bv-UnY" secondAttribute="topMargin" id="HGx-C2-PTG"/>
                             <constraint firstItem="Qui-ko-UPV" firstAttribute="leading" secondItem="jQW-Bv-UnY" secondAttribute="leadingMargin" id="IJ7-1s-QWp"/>
                             <constraint firstItem="hxa-ed-uOJ" firstAttribute="top" secondItem="Qui-ko-UPV" secondAttribute="bottom" id="OKw-Dp-FEn"/>
@@ -496,10 +483,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HFR-jC-Xoh" customClass="AssetListScreenlet" customModule="LiferayScreens">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="570"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="49i-xW-scx"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="570" id="tmQ-co-rOB"/>
-                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="groupId">
                                         <integer key="value" value="20147"/>
@@ -520,7 +503,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="HFR-jC-Xoh" firstAttribute="top" secondItem="aYR-2z-09D" secondAttribute="topMargin" id="7A2-WI-imT"/>
                             <constraint firstAttribute="trailingMargin" secondItem="HFR-jC-Xoh" secondAttribute="trailing" id="HmH-WC-aKj"/>
                             <constraint firstItem="HFR-jC-Xoh" firstAttribute="top" secondItem="aYR-2z-09D" secondAttribute="topMargin" id="KOs-RT-d6y"/>
                             <constraint firstItem="HFR-jC-Xoh" firstAttribute="leading" secondItem="aYR-2z-09D" secondAttribute="leadingMargin" id="cs7-V4-CYl"/>
@@ -561,7 +543,7 @@
         <image name="GrowLogo.png" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0eK-Ea-WTR"/>
-        <segue reference="tMW-7Q-Sgk"/>
+        <segue reference="xd5-41-OGh"/>
+        <segue reference="0ol-fb-PX4"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -15,6 +15,7 @@ class LearnViewController: UIViewController, AssetListScreenletDelegate {
 		super.viewDidLoad()
 		
 		self.screenlet.delegate = self
+
 		let assetQuery: [String: AnyObject] = [
 			"allCategoryIds":[30836],
 			"groupId":20147,
@@ -22,8 +23,6 @@ class LearnViewController: UIViewController, AssetListScreenletDelegate {
 		]
 		
 		self.screenlet.customEntryQuery = assetQuery
-		
-		// Do any additional setup after loading the view.
 	}
 	
 	func screenlet(screenlet: AssetListScreenlet, onAssetSelected asset: Asset) {
@@ -41,5 +40,7 @@ class LearnViewController: UIViewController, AssetListScreenletDelegate {
 	}
 
 	@IBOutlet weak var screenlet: AssetListScreenlet!
+
 	var selectedAsset: Asset!
+
 }

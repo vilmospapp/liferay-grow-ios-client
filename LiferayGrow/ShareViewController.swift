@@ -14,8 +14,8 @@ class ShareViewController: UIViewController, AssetListScreenletDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-		
 		self.screenlet.delegate = self
+
 		let assetQuery: [String: AnyObject] = [
 			"allCategoryIds":[30838],
 			"groupId":20147,
@@ -23,7 +23,6 @@ class ShareViewController: UIViewController, AssetListScreenletDelegate {
 		]
 		
 		self.screenlet.customEntryQuery = assetQuery
-
     }
     
 	func screenlet(screenlet: AssetListScreenlet, onAssetSelected asset: Asset) {
@@ -40,8 +39,8 @@ class ShareViewController: UIViewController, AssetListScreenletDelegate {
 		}
 	}
 	
-	
 	@IBOutlet weak var screenlet: AssetListScreenlet!
 	
 	var selectedAsset: Asset!
+
 }

@@ -15,10 +15,10 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 
 		if SessionContext.loadStoredCredentials() {
-			print("load session from store")
+			print("Load stored credentials")
 		}
 		else {
-			print("No session stored")
+			print("No credentials are stored")
 		}
     }
 	
