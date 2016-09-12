@@ -29,7 +29,6 @@
 		3C8947611D75BEB0000A3026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C8947601D75BEB0000A3026 /* Assets.xcassets */; };
 		3C8947641D75BEB0000A3026 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C8947621D75BEB0000A3026 /* LaunchScreen.storyboard */; };
 		3C94B7571D7EE37500EE0041 /* GrowLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C94B7561D7EE37500EE0041 /* GrowLogo.png */; };
-		3C94B7591D7EEA0E00EE0041 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C94B7581D7EEA0E00EE0041 /* icon@2x.png */; };
 		3C94B75B1D7EF5ED00EE0041 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3C94B75A1D7EF5ED00EE0041 /* background.jpg */; };
 		3CA85E981D78679900EFF4CD /* AssetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA85E971D78679900EFF4CD /* AssetViewController.swift */; };
 		3CADBD791D81AB3A0069F955 /* LRWikicontentService_v7.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CADBD781D81AB3A0069F955 /* LRWikicontentService_v7.m */; };
@@ -64,7 +63,6 @@
 		3C8947631D75BEB0000A3026 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C8947651D75BEB0000A3026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C94B7561D7EE37500EE0041 /* GrowLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GrowLogo.png; path = LiferayGrow/GrowLogo.png; sourceTree = "<group>"; };
-		3C94B7581D7EEA0E00EE0041 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "LiferayGrow/icon@2x.png"; sourceTree = "<group>"; };
 		3C94B75A1D7EF5ED00EE0041 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = LiferayGrow/background.jpg; sourceTree = "<group>"; };
 		3CA85E971D78679900EFF4CD /* AssetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetViewController.swift; sourceTree = "<group>"; };
 		3CADBD761D81AB390069F955 /* LiferayGrow-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "LiferayGrow-Bridging-Header.h"; path = "Service/v7/wikicontent/LiferayGrow-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -113,7 +111,6 @@
 				3C834E2F1D869112009785E8 /* 152x152.png */,
 				3C834E301D869112009785E8 /* 167x167.png */,
 				3C94B75A1D7EF5ED00EE0041 /* background.jpg */,
-				3C94B7581D7EEA0E00EE0041 /* icon@2x.png */,
 				3C94B7561D7EE37500EE0041 /* GrowLogo.png */,
 				3CB6EECD1D76FA0700A54BC6 /* Podfile */,
 				3CB6EEC61D76C07F00A54BC6 /* liferay-server-context.plist */,
@@ -244,7 +241,6 @@
 				3C834E3D1D869342009785E8 /* 87x87.png in Resources */,
 				3C834E311D869112009785E8 /* 58x58.png in Resources */,
 				3C314E7D1D7F565E00715E08 /* template.html in Resources */,
-				3C94B7591D7EEA0E00EE0041 /* icon@2x.png in Resources */,
 				3CB6EECE1D76FA0700A54BC6 /* Podfile in Resources */,
 				3CB6EEC71D76C07F00A54BC6 /* liferay-server-context.plist in Resources */,
 				3C834E351D869112009785E8 /* 167x167.png in Resources */,
